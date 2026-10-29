@@ -1,0 +1,89 @@
+{
+  "name": "rebook-rainilyl",
+  "displayName": "rebook-rainilyl",
+  "description": "github：https://github.com/Rainilyl/Rebook-Rainilyl",
+  "version": "0.9.1",
+  "publisher": "Rainilyl",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "rebookRainilyl.prev",
+        "key": "ctrl+alt+,",
+        "mac": "ctrl+alt+,"
+      },
+      {
+        "command": "rebookRainilyl.next",
+        "key": "ctrl+alt+.",
+        "mac": "ctrl+alt+."
+      },
+      {
+        "command": "rebookRainilyl.jump",
+        "key": "ctrl+alt+;",
+        "mac": "ctrl+alt+;"
+      },
+      {
+        "command": "rebookRainilyl.prevChapter",
+        "key": "ctrl+alt+[",
+        "mac": "ctrl+alt+["
+      },
+      {
+        "command": "rebookRainilyl.nextChapter",
+        "key": "ctrl+alt+]",
+        "mac": "ctrl+alt+]"
+      },
+      {
+        "command": "rebookRainilyl.toggle",
+        "key": "ctrl+alt+\\",
+        "mac": "ctrl+alt+\\"
+      }
+    ],
+    "configuration": {
+      "title": "rebook-rainilyl",
+      "properties": {
+        "rebookRainilyl.currentPage": {
+          "type": "number",
+          "default": 1,
+          "minimum": 1,
+          "description": "当前页数 (Current Page)。跳转用；翻页 ±1；改显示字数不会改它。"
+        },
+        "rebookRainilyl.bookPath": {
+          "type": "string",
+          "default": "",
+          "description": "文件位置 (File Path)"
+        },
+        "rebookRainilyl.pageSize": {
+          "type": "number",
+          "default": 30,
+          "minimum": 5,
+          "maximum": 200,
+          "description": "状态栏显示字数 (Status Bar Display Length)。只改变一次显示多少字，不移动阅读位置。"
+        },
+        "rebookRainilyl.lineBreak": {
+          "type": "string",
+          "default": " ",
+          "description": "换行分隔符号，默认一个空格 (Line Break Separation Symbol, Default a space)"
+        },
+        "rebookRainilyl.statusBarPosition": {
+          "type": "string",
+          "enum": ["left", "right"],
+          "default": "right",
+          "enumDescriptions": [
+            "状态栏最左侧 (Leftmost)",
+            "状态栏最右侧 (Rightmost)"
+          ],
+          "description": "内容放在状态栏最左侧或最右侧 (Status Bar Position: Left or Right)"
+        }
+      }
+    }
+  }
+}
