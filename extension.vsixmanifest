@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Language="en-US" Id="rebook-rainilyl" Version="0.9.1" Publisher="Rainilyl"/>
     <DisplayName>rebook-rainilyl</DisplayName>
-    <Description xml:space="preserve">github：https://github.com/Rainilyl/Rebook-Rainilyl</Description>
+    <Description xml:space="preserve">状态栏小说阅读 / Status bar novel reader for VS Code &amp; Cursor</Description>
     <Tags></Tags>
     <Categories>Other</Categories>
     <GalleryFlags>Public</GalleryFlags>

@@ -1,9 +1,17 @@
 {
   "name": "rebook-rainilyl",
   "displayName": "rebook-rainilyl",
-  "description": "github：https://github.com/Rainilyl/Rebook-Rainilyl",
+  "description": "状态栏小说阅读 / Status bar novel reader for VS Code & Cursor",
   "version": "0.9.1",
   "publisher": "Rainilyl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rainilyl/Rebook-Rainilyl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rainilyl/Rebook-Rainilyl/issues"
+  },
+  "homepage": "https://github.com/Rainilyl/Rebook-Rainilyl#readme",
   "engines": {
     "vscode": "^1.74.0"
   },
